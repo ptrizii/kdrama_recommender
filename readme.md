@@ -36,6 +36,25 @@ Recommendations are shown as **You might also like** in the drama detail modal. 
     * Clickable drama cards
     * Modal/detail view per drama
 
+## 🗂️ Project Structure
+```
+KDRAMA_RECOMMENDER/
+│
+├── streamlit.app.py        # Main Streamlit entry point
+├── requirements.txt
+│
+└── src/
+    ├── artifact/           # Trained models & large artifacts (Git LFS)
+    ├── data/               # Cleaned & processed datasets
+    ├── scraper/            # Web scraping scripts
+    ├── modeling/           # Feature engineering & experiments
+    ├── picture/            # Static images / posters
+    │
+    ├── collections.py     # Collection definitions & rules
+    ├── components.py      # Reusable UI components
+    └── recommender.py     # Filtering & recommendation logic
+```
+
 ## 🚀 How to Run the App
 Access the [streamlit app here](https://kdrama-matchmaker.streamlit.app/) or 
 
