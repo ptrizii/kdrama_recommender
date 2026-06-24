@@ -1,0 +1,11 @@
+[theme]
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+baseFontSize = 16
+headingFont = "Inter:https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+codeFont = "monospace"
+primaryColor = "#E50914"
+
+[theme.sidebar]
+backgroundColor = "#E50914"
+primaryColor = "#f7f7f5"
+borderColor = "#f7f7f5"

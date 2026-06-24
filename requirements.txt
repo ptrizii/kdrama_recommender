@@ -1,0 +1,7 @@
+annoy==1.17.3
+numpy==2.3.1
+pandas==2.3.1
+streamlit==1.58.0
+streamlit-searchbox==0.1.24
+typing-inspection==0.4.1
+typing_extensions==4.15.0
