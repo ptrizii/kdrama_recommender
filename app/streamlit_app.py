@@ -3,7 +3,7 @@ import random
 from streamlit_searchbox import st_searchbox
 from components import render_row, search_titles, click_button, process_display
 from recommender import load_data
-from collections import COLLECTIONS_GENRE, COLLECTIONS_SPOTLIGHT_DRAMA, COLLECTIONS_SPOTLIGHT_MOVIE, GENRES, STYLE
+from constant import COLLECTIONS_GENRE, COLLECTIONS_SPOTLIGHT_DRAMA, COLLECTIONS_SPOTLIGHT_MOVIE, GENRES, STYLE
 
 st.markdown(STYLE, unsafe_allow_html=True)
 
