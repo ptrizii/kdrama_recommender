@@ -3,7 +3,7 @@ import random
 from streamlit_searchbox import st_searchbox
 from components import render_row, search_titles, click_button, process_display
 from recommender import load_data
-from collections import COLLECTIONS, COLLECTIONS_SPOTLIGHT_DRAMA, COLLECTIONS_SPOTLIGHT_MOVIE, GENRES, STYLE
+from collections import COLLECTIONS_GENRE, COLLECTIONS_SPOTLIGHT_DRAMA, COLLECTIONS_SPOTLIGHT_MOVIE, GENRES, STYLE
 
 st.markdown(STYLE, unsafe_allow_html=True)
 
@@ -40,7 +40,7 @@ if 'filter_config' not in st.session_state:
         'top_n': 20
     }
 if "rotation" not in st.session_state:
-    st.session_state["rotation"] = random.sample(COLLECTIONS, k=min(2, len(COLLECTIONS)))
+    st.session_state["rotation"] = random.sample(COLLECTIONS_GENRE, k=min(2, len(COLLECTIONS_GENRE)))
 
 # SIDEBAR
 with st.sidebar:

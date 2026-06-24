@@ -56,7 +56,7 @@ COLLECTIONS_SPOTLIGHT_MOVIE = [
         }}
 ]
 
-COLLECTIONS = [
+COLLECTIONS_GENRE = [
     {
         "key": "politic_power", "label": "Politic & Power Struggle",
         "rules": {
