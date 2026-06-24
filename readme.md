@@ -51,8 +51,8 @@ KDRAMA_RECOMMENDER/
     ├── picture/            # Static images / posters
     │
     ├── collections.py     # Collection definitions & rules
-    ├── components.py      # Reusable UI components
-    └── recommender.py     # Filtering & recommendation logic
+    ├── components.py      # Reusable UI components and filtering
+    └── recommender.py     # Recommendation logic
 ```
 
 ## 🚀 How to Run the App
