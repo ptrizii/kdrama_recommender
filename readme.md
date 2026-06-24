@@ -3,11 +3,12 @@ A Netflix-inspired K-drama discovery app built with Streamlit, that helps users 
 
 This repository also serves as an archive of the full project lifecycle, including data scraping, preprocessing, modeling, and the final deployed application.
 
-## Data
+## 🧪 Data
 Drama metadata is collected via custom scraping scripts of Mydramalist website.
 
 ## ⚙️ Recommendation Engine
 The recommendation engine uses **content-based filtering** to match dramas based on metadata similarity. It combines **MiniLM embeddings** and **TF-IDF vectors** to capture both semantic meaning and keyword relevance, with **Annoy Index** enabling fast nearest-neighbor lookup at scale.
+
 **Feature used for matching:**
 1. Title
 2. Genre
@@ -36,7 +37,7 @@ Recommendations are shown as **You might also like** in the drama detail modal. 
     * Modal/detail view per drama
 
 ## 🚀 How to Run the App
-Access the streamlit app here or 
+Access the [streamlit app here](https://kdrama-matchmaker.streamlit.app/) or 
 
 **1. Clone the repository**
 ```
