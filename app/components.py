@@ -1,5 +1,5 @@
 import streamlit as st
-from app.recommender import recommender, load_data
+from recommender import recommender, load_data
 
 df, _, _ = load_data()
 
