@@ -46,7 +46,7 @@ if "rotation" not in st.session_state:
 with st.sidebar:
     left, center, right = st.columns(3)
     with center:    
-        st.image("../src/picture/movie_border.png", width=80)
+        st.image("src/picture/movie_border.png", width=80)
     st.title("Customize")
     with st.expander("Homepage Display", expanded=True):
         f_igenre = st.multiselect("Include Genre", GENRES, max_selections=3, help="Genre to display. Up to 3")
