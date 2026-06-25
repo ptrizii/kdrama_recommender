@@ -58,14 +58,6 @@ COLLECTIONS_SPOTLIGHT_MOVIE = [
 
 COLLECTIONS_GENRE = [
     {
-        "key": "politic_power", "label": "Politic & Power Struggle",
-        "rules": {
-            "genres": ["political"],
-            "score": 6,
-            "year": 2015,
-            "user_count": 5000
-        }},
-    {
         "key": "webtoon", "label": "From Page to Screen",
         "rules": {
             "tag": ["webtoon", "novel"],
@@ -73,17 +65,27 @@ COLLECTIONS_GENRE = [
             "user_count": 5000
         }},
     {
-        "key": "horror", "label": "Horror",
+        "key": "horror", "label": "Eerie & Supernatural",
         "rules": {
             "genres": ["horror", "supernatural"],
+            "ex_genres": ["comedy"],
             "score": 7,
             "user_count": 5000
         }
     },
     {
+        "key": "politic_power", "label": "Politic & Power Struggle",
+        "rules": {
+            "genres": ["political", "law"],
+            "ex_genres": ["comedy"],
+            "score": 6,
+            "year": 2015,
+            "user_count": 5000
+        }},
+    {
         "key": "pyschological", "label": "Pyschological & Mind Bending",
         "rules": {
-            "genres": ["psychological", "law"],
+            "genres": ["psychological", "mystery"],
             "score": 6,
             "user_count": 5000
         }
@@ -100,6 +102,7 @@ COLLECTIONS_GENRE = [
         "key": "youth_life", "label": "The Freshness of Youth & Life",
         "rules": {
             "genres": ["life", "youth"],
+            "ex-genres": ["crime", "mystery"],
             "score": 6,
             "user_count": 3000
         }
@@ -111,7 +114,7 @@ COLLECTIONS_GENRE = [
             "score": 6,
             "user_count": 5000
         }
-    },
+    }
 ]
 
 GENRES = [

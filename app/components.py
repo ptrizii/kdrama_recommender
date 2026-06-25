@@ -43,6 +43,11 @@ def apply_collection_filter(df, collection, seen_ids):
         genre_mask = subset["genre"].dropna().apply(
             lambda row_text: any(g.lower() in row_text.lower() for g in rules["genres"]))
         subset = subset[genre_mask]
+    if "ex_genres" in rules:
+        genre_mask = subset["genre"].dropna().apply(
+            lambda row_text: any(g.lower() in row_text.lower() for g in rules["ex_genres"])
+        )
+        subset = subset[~genre_mask]
     if "score" in rules:
         subset = subset[subset["score"] >= rules["score"]]
     if "user_count" in rules:
